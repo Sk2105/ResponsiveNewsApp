@@ -1,0 +1,68 @@
+[versions]
+adaptive = "1.1.0-alpha07"
+agp = "8.5.0"
+kotlin = "1.9.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+kotlinxSerializationJson = "1.5.1"
+ktorClientContentNegotiation = "2.3.0"
+ktorClientSerialization = "2.3.0"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+composeBom = "2024.04.01"
+material3AdaptiveNavigationSuite = "1.3.1"
+hilt = "2.51.1"
+ktor = "2.3.4"
+paging = "3.2.1"
+
+[libraries]
+androidx-adaptive = { module = "androidx.compose.material3.adaptive:adaptive", version.ref = "adaptive" }
+androidx-adaptive-layout = { module = "androidx.compose.material3.adaptive:adaptive-layout", version.ref = "adaptive" }
+androidx-adaptive-navigation = { module = "androidx.compose.material3.adaptive:adaptive-navigation", version.ref = "adaptive" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-material3-adaptive-navigation-suite = { module = "androidx.compose.material3:material3-adaptive-navigation-suite", version.ref = "material3AdaptiveNavigationSuite" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+
+# ktor dependencies
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClientContentNegotiation" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktorClientSerialization" }
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+# pagging library
+kotlinx-paging = { module = "androidx.paging:paging-compose", version.ref = "paging" }
+kotlinx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+
+
+# hilt dependencies
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+hilt-navigation = { module = "androidx.hilt:hilt-navigation-compose", version = "1.2.0" }
+
+
+# coil
+coil = { module = "io.coil-kt:coil-compose", version = "2.4.0" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version = "1.9.0-1.0.13" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-serilization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
